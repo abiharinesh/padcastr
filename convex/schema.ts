@@ -18,6 +18,7 @@ export default defineSchema({
     voiceType: v.string(),
     audioDuration: v.number(),
     views: v.number(),
+
   })
     .searchIndex('search_author', { searchField: 'author' })
     .searchIndex('search_title', { searchField: 'podcastTitle' })
@@ -28,4 +29,5 @@ export default defineSchema({
     clerkId: v.string(),
     name: v.string(),
   })
+  
 })
